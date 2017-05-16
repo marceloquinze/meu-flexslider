@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+Flex Slider
+--------------------------------------------------------------*/
+
+.slider-details-container {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll right -53px;
+    color: #FFF;
+    padding: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    max-width: 550px;
+ }
+
+.slider-details-container .slider-title a{
+	color: #FFF;
+	font-weight: bold;
+}
+
+.slider-details-container a.btn{
+	background-color: rgb(239, 79, 79);
+	color: rgb(254, 254, 254);
+	border-radius: 0px;
+	text-transform: uppercase;
+}
+
+
+.flex-control-paging li a {
+    background: rgba(189, 189, 189, 0.5) !important;
+    height: 4px !important;
+    width: 30px !important;
+}
+
+.flex-control-paging li a.flex-active {
+    background: rgba(253, 27, 27, 0.7) !important;
+}
+
+
+/*--------------------------------------------------------------
+Responsive CSS
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px)  {
+
+	.slider-details-container {
+		position: absolute;
+		top: 45%;
+		margin-right: 45px;
+		width: auto;
+		padding: 15px;
+	}
+	.slider-description {
+		display: none;
+	}
+	.slider-title h3 {
+		font-size: 16px;
+		margin: 0;
+	}
+	.slider-readmore-button {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+	.slider-readmore-button {
+		display: none;
+	}
+	.slider-description {
+		display: none;
+	}
+	.slider-title h3 {
+		margin: 0;
+	}
+
+}
+
